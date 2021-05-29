@@ -1,0 +1,311 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+header{
+    height:80px;
+    width:100%;
+    background-color: #1a1918;
+    display:flex;
+    justify-content: center;
+}
+.content_area{
+  height:100%;
+  width:88%;
+  /* background-color: blanchedalmond; */
+}
+
+.header_content{
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width:10%;
+    height:100%;
+    /* background-color: yellow; */
+    display:flex;
+    align-items: center;
+}
+.logo>img{
+    width:96%;
+    
+}
+
+nav{
+    width:38%;
+    height: 100%;
+    /* background-color: red; */
+    
+}
+
+nav>ul{
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul>li{
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight:bold;
+    color:white;
+    font-size: 16px;
+    /* background-color: rosybrown; */
+}
+nav>ul>li>i{
+    color:white;
+    font-size: 20px;
+    /* background-color: red; */
+    
+    
+}
+nav>ul>li:first-child{
+    display:none;
+}
+
+.banner{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #1a1918;
+    display: flex;
+    justify-content: center;
+}
+
+.banner_details{
+    padding-top:2px;
+    padding-left:5px;
+    height:auto;
+    width:50%;
+    /* background-color: red; */
+}
+
+.banner_details>h1{
+    padding-top:3px;
+    font-family: 'Segoe UI';
+    color:white;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.banner_p1>p{
+    color:#b5b5b5;
+    font-family: 'Segoe UI';
+    font-weight:500;
+    padding-top:6px;
+    padding-bottom: 8px;
+   
+}
+
+.banner_details>p{
+    padding-top:7px;
+    padding-bottom: 7px;
+    font-family: 'Segoe UI';
+    font-weight:500;
+    color:white;
+    display:flex;
+}
+.banner_details>p>i{
+    font-size:20px;
+}
+
+.banner_details>p>span{
+    margin-left: 10px;
+}
+
+.banner_button{
+    margin-top: 20px;
+}
+.banner_button>button{
+    padding:10px 50px 10px 50px;
+    text-transform: uppercase;
+    border:none;
+    outline: none;
+    border-radius: 3px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    cursor:pointer;
+}
+.banner_button>button:first-child{
+    background-color: #ff7300;
+    color:white;
+}
+
+.banner_img{
+    height:380px;
+    width:50%;
+    /* background-color: red; */
+}
+
+.banner_area{
+    display:flex;
+}
+
+.banner_img>img{
+    width:100%;
+    border-radius: 3px;
+}
+
+.why{
+    display: flex;
+    justify-content: center;
+    padding-top:30px;
+    padding-bottom: 30px;
+    background-color: transparent;
+}
+
+.why_content{
+    display:grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: 200px;
+    column-gap: calc(10%/5);
+    
+}
+
+.content{
+    background-color: white;
+    width:100%;
+    height:150px;
+    border-radius:5px;
+    border: 1px solid rgb(240, 240, 240);
+    box-shadow: 1px 3px 3px rgb(228, 224, 224);
+}
+
+.content_parent{
+padding:20px;
+}
+
+.content_parent>p{
+    color:black;
+}
+
+@media screen and (max-width:500px){
+   .header_content{
+       flex-direction: column;
+       height:auto;
+       align-items: left;
+       overflow: hidden;
+   }
+   
+
+   .logo{
+       
+       width:38%;
+       display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       height:80px;
+       position:absolute;
+       /* background-color: blue; */
+       
+   }
+   .logo>img{
+       text-align:center;
+       
+   }
+   nav{
+       height:80px;
+       width:100%;
+       /* background-color: white; */
+       flex-direction: column;
+       
+   }
+
+   nav:hover{
+       height:auto;
+   }
+   nav>ul{
+       height:100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: white; */
+
+   }
+   
+   nav>ul>li{
+       width:100%;
+       /* margin-top: 50px; */
+       /* height:80px; */
+       /* background-color: white; */
+   }
+
+   nav>ul>li:first-child{
+       height:80px;
+       display: flex ;
+       justify-content: flex-end;
+       align-items: center;
+       
+   }
+   nav>ul>li>div{
+       height:80px;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+
+   }
+   .banner{
+       height:auto;
+   }
+
+   .banner_area{
+       width:100%;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center;
+   }
+
+   .banner_details{
+    width:80%;
+   
+   }
+   .banner_details>h1{
+       width:100%;
+       text-align: center;
+   }
+   .banner_details>p{
+       text-align: left;
+   }
+   .banner_p1>p{
+       text-align: center;
+       
+   }
+   .banner_button{
+     height:100%;
+    
+   }
+   .banner_button>button{
+       width:100%;
+       text-align: center;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       
+       
+   }
+   .banner_img{
+       display:none;
+   }
+   .why{
+       height:auto;
+       width:100%;
+   }
+   .why_content{
+       
+       width:100%;
+       display:grid;
+       grid-template-columns: 45% 45%;
+       grid-template-rows: 200px 200px 200px;
+       align-items: center;
+       justify-content: center;
+       padding:0px;
+       margin: 0px;
+
+   }
+   .content{
+       width:100%;
+   }
+   
+   
+}
