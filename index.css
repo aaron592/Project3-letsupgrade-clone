@@ -244,6 +244,7 @@ font-family: 'Segoe UI';
     font-family: 'Segoe UI';
     font-weight: 500;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 /* css for job section  */
@@ -309,8 +310,48 @@ font-family: 'Segoe UI';
     font-weight: 480;
 }
 
+/* css for certificate section  */
 
+.certificate{
+    padding-top:30px;
+    padding-bottom:30px;
+    background: linear-gradient(.94turn,#ffa74f -37.49%,rgba(176,100,148,.22) 48.05%,hsla(0,0%,76.9%,0) 114.11%);
+    display: flex;
+    justify-content: center;
+    
+}
 
+.certi-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.certi_img{
+    
+    width:45%;
+    /* background-color: green; */
+}
+.certi_img>img{
+    width:100%;
+}
+
+.certi_details{
+    
+    width:45%;
+    /* background-color: green; */
+    display:flex;
+    align-items: center;
+}
+
+.certi_details>div{
+   font-family: 'Segoe UI';
+   
+}
+
+.certi_details>div>p:nth-of-type(2){
+    font-weight: 500;
+}
 
 
 
@@ -467,12 +508,18 @@ font-family: 'Segoe UI';
     text-align: center;
 }
 
+
+   .section>h1{
+       text-align: center;
+   }
    
 
    /* .content-para>div>h1{
       text-align: center;
 
    } */
+
+   /* css for job  */
    .job_section{
        flex-direction:column;
        justify-content: center;
@@ -494,5 +541,29 @@ font-family: 'Segoe UI';
        width:100%;
        grid-column: 1/3;
    }
+
+   .certi-content{
+       flex-direction: column;
+   }
    
+   .certi_img{
+       width:100%;
+   }
+
+   .certi_details{
+       padding:10px;
+       width:100%;
+   }
+   .certi_details>div>h1{
+       padding-bottom:10px;
+   }
+
+   .certi_details>div>h1,p:nth-of-type(1){
+       text-align: center;
+   }
+
+   .certi_details>div>p{
+       padding-bottom:10px;
+   }
+
 }
