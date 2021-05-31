@@ -401,10 +401,55 @@ padding-top:20px;
     background-color: rgb(218, 218, 218);
 }
 
+<<<<<<< HEAD
 .essential>div>button:nth-of-type(2){
     color:#bd5500;
     background-color:#fff4eb;
 }
+=======
+.certificate{
+    padding-top:30px;
+    padding-bottom:30px;
+    background: linear-gradient(.94turn,#ffa74f -37.49%,rgba(176,100,148,.22) 48.05%,hsla(0,0%,76.9%,0) 114.11%);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.certi-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.certi_img{
+    
+    width:45%;
+    /* background-color: green; */
+}
+.certi_img>img{
+    width:100%;
+}
+
+.certi_details{
+    
+    width:45%;
+    /* background-color: green; */
+    display:flex;
+    align-items: center;
+}
+
+.certi_details>div{
+   font-family: 'Segoe UI';
+   
+}
+
+.certi_details>div>p:nth-of-type(2){
+    font-weight: 500;
+}
+
+
+>>>>>>> 80e1daeed69fca409757a3280b97e671276343f6
 
 .pgp{
     padding:20px 20px 20px 20px;
@@ -655,6 +700,7 @@ padding-top:20px;
        padding-bottom:10px;
    }
 
+<<<<<<< HEAD
    /* css for programs  */
    .program{
        flex-direction: column;
@@ -684,3 +730,6 @@ padding-top:20px;
     margin-top: 10px;
    }
 }
+=======
+}
+>>>>>>> 80e1daeed69fca409757a3280b97e671276343f6
