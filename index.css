@@ -148,38 +148,177 @@ nav>ul>li:first-child{
     border-radius: 3px;
 }
 
+/* css for why section  */
+
 .why{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* background-color: gray; */
     display: flex;
     justify-content: center;
-    padding-top:30px;
-    padding-bottom: 30px;
-    background-color: transparent;
-}
-
-.why_content{
-    display:grid;
-    grid-template-columns: 15% 15% 15% 15% 15% 15%;
-    grid-template-rows: 200px;
-    column-gap: calc(10%/5);
     
 }
 
-.content{
+.why_parent{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: 150px 500px;
+    column-gap: calc(10%/5);
+    row-gap: 30px;
+
+}
+
+.why_box{
     background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(245, 238, 238);
+    box-shadow: 0px 2px 3px gray;
+}
+.why_box_child{
+    padding:20px;
+}
+
+.content_img{
+    
+    grid-column: 1/4;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: center;
+}
+
+.content_img>img{
+    width:75%;
+}
+
+a{
+    color:#ff7300;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.content_para{
+    grid-column: 4/7;
+    /* background-color: lightpink; */
+    display: flex;
+    align-items: center;
+}
+
+.content_para>div{
+    /* background-color: lightseagreen; */
+    width:84%;
+   
+   
+}
+.content_para>div>h1{
+    font-weight: 500;
+    font-family: 'Segoe UI';
+}
+
+.content_para>div>p{
+    padding-top:8px;
+    padding-bottom: 8px;
+    font-weight: 500;
+    font-family: 'Segoe UI';
+    
+}
+
+/* css for section  */
+.section{
+    background-color: black;
+    padding: 30px 20% 30px 20%;
+    color:white;
+}
+
+.section>h1{
+padding-bottom:10px;
+font-family: 'Segoe UI';
+}
+
+.section>p{
+    padding-bottom:20px;
+font-family: 'Segoe UI';
+}
+
+.section>button{
+    padding: 10px 30px 10px 30px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* css for job section  */
+.job_section{
+    padding-top:30px;
+    padding-bottom: 30px;
+    /* background-color: lightskyblue; */
+    text-align: center;
+    font-family: 'Segoe UI';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.job_content{
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 160px 160px;
+    /* background-color: maroon; */
+    column-gap: calc(10%/2);
+    row-gap: 20px;
+}
+
+.job{
     width:100%;
     height:150px;
-    border-radius:5px;
-    border: 1px solid rgb(240, 240, 240);
-    box-shadow: 1px 3px 3px rgb(228, 224, 224);
+    background-color: white;
+    border: 1px solid rgb(248, 248, 248);
+    box-shadow: 0px 2px 2px gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 
-.content_parent{
-padding:20px;
+.salary{
+    width:25%;
+    /* background-color: mediumblue; */
 }
 
-.content_parent>p{
-    color:black;
+.salary>p{
+    background-color: #fff4eb;
+    color:#bd5500;
+    font-size: 14px;
+    font-weight: 500;
 }
+
+.job_details{
+    width:60%;
+    /* background-color: rgb(38, 214, 76); */
+    text-align: left;
+}
+.job_details>p:first-child{
+    font-weight: bold;
+    
+}
+.job_details>p:nth-child(2){
+    color:gray;
+}
+.job_details>p:nth-child(3){
+    font-weight: 480;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:500px){
    .header_content{
@@ -287,25 +426,73 @@ padding:20px;
    .banner_img{
        display:none;
    }
-   .why{
-       height:auto;
-       width:100%;
-   }
-   .why_content{
-       
-       width:100%;
-       display:grid;
-       grid-template-columns: 45% 45%;
-       grid-template-rows: 200px 200px 200px;
-       align-items: center;
-       justify-content: center;
-       padding:0px;
-       margin: 0px;
 
+   .why{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height:auto;
    }
-   .content{
+
+   .why_parent{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 180px 180px 180px;
+    column-gap: calc(10%/2);
+    
+   }
+
+   .content_img{
+       flex-direction: column;
+       grid-column: 1/3;
+       height:auto;
+   }
+   .content_img>img{
        width:100%;
+       height:auto;
+   }
+
+   .content_para{
+    
+    height:auto;
+    grid-column: 1/3;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .content_para>div>h1{
+       text-align: center;
+   }
+   .content_para>div>p:nth-child(2){
+    text-align: center;
+}
+
+   
+
+   /* .content-para>div>h1{
+      text-align: center;
+
+   } */
+   .job_section{
+       flex-direction:column;
+       justify-content: center;
+       align-items: center;
+   }
+   .job_section>p{
+       text-align: center;
    }
    
+   .job_content{
+       
+       display: grid;
+       grid-template-columns: 45%;
+       grid-template-columns: 160px   ;
+       
+      
+   }
+   .job{
+       width:100%;
+       grid-column: 1/3;
+   }
    
 }
