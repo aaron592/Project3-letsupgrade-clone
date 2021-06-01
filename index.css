@@ -618,8 +618,12 @@ padding-top:20px;
     animation-name: slider;
     animation-timing-function: alternate;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-delay: 3s;
+    animation-duration: 20s;
+    animation-delay: 5s;
+}
+
+.animated_child:hover{
+animation-play-state: paused;
 }
 
 @keyframes slider{
@@ -640,6 +644,9 @@ padding-top:20px;
     }
     75%{
         margin-left: -225%;
+    }
+    87.5%{
+        margin-left:0px;
     }
 }
 
@@ -940,7 +947,7 @@ padding-top:20px;
    .review{
        text-align: center;
    }
-   
+
    .animated_child{ 
        justify-content: space-between; 
    }
