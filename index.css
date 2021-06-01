@@ -401,12 +401,11 @@ padding-top:20px;
     background-color: rgb(218, 218, 218);
 }
 
-<<<<<<< HEAD
 .essential>div>button:nth-of-type(2){
     color:#bd5500;
     background-color:#fff4eb;
 }
-=======
+
 .certificate{
     padding-top:30px;
     padding-bottom:30px;
@@ -448,8 +447,6 @@ padding-top:20px;
     font-weight: 500;
 }
 
-
->>>>>>> 80e1daeed69fca409757a3280b97e671276343f6
 
 .pgp{
     padding:20px 20px 20px 20px;
@@ -700,7 +697,6 @@ padding-top:20px;
        padding-bottom:10px;
    }
 
-<<<<<<< HEAD
    /* css for programs  */
    .program{
        flex-direction: column;
@@ -730,6 +726,5 @@ padding-top:20px;
     margin-top: 10px;
    }
 }
-=======
-}
->>>>>>> 80e1daeed69fca409757a3280b97e671276343f6
+
+
