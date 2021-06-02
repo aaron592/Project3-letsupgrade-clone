@@ -426,10 +426,13 @@ padding-top:20px;
 .certi_img{
     
     width:45%;
+    overflow: hidden;
+    border-radius: 10px;
     /* background-color: green; */
 }
 .certi_img>img{
     width:100%;
+    border-radius: 10px;
 }
 
 .certi_details{
@@ -685,6 +688,54 @@ animation-play-state: paused;
     padding-top:10px;
 }
 
+/* css for community  */
+
+.community{
+    margin-top: 20px;
+    background:linear-gradient(.94turn,#ffa74f -37.49%,rgba(176,100,148,.22) 48.05%,hsla(0,0%,76.9%,0) 114.11%);
+    padding:50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: color;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+@keyframes color{
+    30%{
+        background:linear-gradient(.94turn,#70f887 -37.49%,rgba(176, 100, 100, 0.22) 48.05%,rgba(233, 164, 164, 0) 114.11%);
+    }
+    60%{
+        background:linear-gradient(.94turn,#f6f870 -37.49%,rgba(100, 130, 176, 0.22) 48.05%,rgba(164, 219, 233, 0) 114.11%);
+    }
+}
+
+.community>h1{
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.community>p{
+    font-family: 'Segoe UI';
+}
+
+.community_content{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.community_content>img{
+   margin-top: 30px;
+    min-height: 400px;
+    width:23%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px gray;
+    text-align: center;
+}
 
 
 
@@ -956,6 +1007,19 @@ animation-play-state: paused;
     margin-left: 35px;
    }
 
+   /* css for community  */
+   .community{
+       flex-direction: column;
+       text-align: center;
+       height:auto;
+   }
+
+   .community_content{
+       flex-direction: column;
+       
+   }
+   .community_content>img{
+    width:100%;
 }
 
-
+}
