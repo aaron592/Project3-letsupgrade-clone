@@ -1046,7 +1046,7 @@ animation-play-state: paused;
        padding-bottom:10px;
    }
 
-   .certi_details>div>h1,p{
+   .certi_details>div>h1,p:first-child{
        text-align: center;
    }
 
@@ -1065,11 +1065,11 @@ animation-play-state: paused;
 
    .program_content{
        flex-direction: column;
-       
    }
 
    .essential{
     width:98%;
+    
    }
 
    .essential>div>button:nth-of-type(2){
